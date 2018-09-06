@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import NavContainer from './nav/Container'
+import BodyContainer from './body/Container'
+import FooterContainer from './footer/Container'
 
 class App extends Component {
     constructor() {
@@ -7,7 +10,11 @@ class App extends Component {
     }
     render() {
         return (
-            <div>hi from App</div>
+            <div>
+                <NavContainer/>
+                <BodyContainer/>
+                <FooterContainer/>
+            </div>
         )
     }
 }
